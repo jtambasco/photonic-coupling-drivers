@@ -1,0 +1,18 @@
+set datafile separator ','
+
+set term pngcairo size 30cm,30cm background rgb 'black'
+set out filename_png
+
+set size square
+
+set border lc rgb "white" lw 2
+
+set xlabel axis_1 . ' [um]' tc rgb 'white'
+set ylabel axis_2 . ' [um]' tc rgb 'white'
+set title 'Power Scan: '. axis_1 . '–' . axis_2 tc rgb 'white'
+
+set cbrange [0:*]
+
+unset key
+
+plot filename u 1:2:($3*1e6) w image pixels

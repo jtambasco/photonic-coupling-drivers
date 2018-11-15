@@ -1,0 +1,16 @@
+set datafile separator ','
+
+set term pngcairo size 30cm,20cm
+set out filename . '.png'
+
+unset key
+set border lw 2
+
+set title 'Wavelength Sweep'
+set xlabel 'Wavelength [nm]'
+set ylabel 'Power [uW]'
+
+plot filename u ($1*1.e9):($2*2.e6) w l
+
+set out
+

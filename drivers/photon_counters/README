@@ -1,0 +1,8 @@
+Jean-Luc Tambasco, 2015
+
+This class works be communicating to the Idq801's
+manufacturer libraries via Python's ctypes module.
+
+The Python class should work under Windows and
+Linux, and Python 3 as well as Python 2.7.
+

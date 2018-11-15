@@ -1,0 +1,17 @@
+set term pngcairo size 20cm,20cm
+set out filename_image
+
+unset key
+unset colorbox
+
+set border lw 1.5
+
+set title 'Pattern Path'
+set xlabel 'Axis 1'
+set ylabel 'Axis 2'
+
+set grid
+
+set palette model RGB defined (0 'green', 1 'red')
+
+plot filename u 1:2:0 w lp pt 7 palette
