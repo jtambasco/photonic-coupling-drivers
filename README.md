@@ -6,6 +6,7 @@ Included hardware includes:
 * Power meters: Thorlabs PM100 and Newport 2832C.
 * Oscilloscopes: Rigol 1000Z (USB driver).
 * Single photon counter/timestamper: ID Quantique IDQ801.
+* Stages: Luminos, Newport and Newport Picomotor.
 
 The drivers include generic interface abstract base classes for:
 * lasers,
