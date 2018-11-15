@@ -18,3 +18,11 @@ Functionality:
 * Modules to synchronise laser, power meter and stages to optimise coupling
     efficiency and take fibre swept images.
 * Synchronise swept laser with power meters.
+
+Requirements:
+* [Gnuplot](http://www.gnuplot.info/) required for plotting.
+* [linux-gpib](https://linux-gpib.sourceforge.io/) required for equipment reliant
+    on GPIB communication.
+* [pyusb](https://github.com/pyusb/pyusb) required for some USB devices.
+* [python-usbtmc](https://github.com/python-ivi/python-usbtmc) required for the
+    Rigol1000z driver.
